@@ -1,2 +1,2 @@
 # react-practice
-This is for react practice
+This is for react biginners practice
