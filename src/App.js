@@ -12,7 +12,11 @@ import './App.css';
 // import Form from './components/Form';
 // import LifecycleA from './components/LifecycleA';
 // import ParentComp from './components/ParentComp';
-import RefDemo from './components/RefDemo';
+// import RefDemo from './components/RefDemo';
+// import Hero from './components/Hero';
+// import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 function App() {
   return (
     <div className="App">
@@ -29,7 +33,18 @@ function App() {
       {/* <LifecycleA /> */}
       {/* <LifecycleB /> */}
       {/* <ParentComp /> */}
-      <RefDemo />
+      {/* <RefDemo /> */}
+      {/* <ErrorBoundary>
+        <Hero heroName="Iron Man" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName="Super Man" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName="Joker" />
+      </ErrorBoundary> */}
+      <ClickCounter name="Chand" />
+      <HoverCounter />
     </div>
   );
 }
