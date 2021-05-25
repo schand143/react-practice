@@ -17,8 +17,10 @@ import './App.css';
 // import ErrorBoundary from './components/ErrorBoundary';
 // import ClickCounter from './components/ClickCounter';
 // import HoverCounter from './components/HoverCounter';
-import ComponentC from './components/ComponentC';
-import { UserProvider } from './components/userContext';
+// import ComponentC from './components/ComponentC';
+// import PostList from './components/API/PostList';
+import PostForm from './components/API/PostForm';
+// import { UserProvider } from './components/userContext';
 
 function App() {
   return (
@@ -48,9 +50,11 @@ function App() {
       </ErrorBoundary> */}
       {/* <ClickCounter name="Chand" /> */}
       {/* <HoverCounter /> */}
-      <UserProvider value="Chand">
+      {/* <UserProvider value="Chand">
         <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
+      {/* <PostList /> */}
+      <PostForm />
     </div>
   );
 }
