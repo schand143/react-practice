@@ -15,8 +15,11 @@ import './App.css';
 // import RefDemo from './components/RefDemo';
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
+
 function App() {
   return (
     <div className="App">
@@ -43,8 +46,11 @@ function App() {
       <ErrorBoundary>
         <Hero heroName="Joker" />
       </ErrorBoundary> */}
-      <ClickCounter name="Chand" />
-      <HoverCounter />
+      {/* <ClickCounter name="Chand" /> */}
+      {/* <HoverCounter /> */}
+      <UserProvider value="Chand">
+        <ComponentC />
+      </UserProvider>
     </div>
   );
 }
